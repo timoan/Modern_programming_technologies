@@ -1,0 +1,45 @@
+<html>
+<head>
+    <title>Website</title>
+<style>
+@import url(http://fonts.googleapis.com/css?family=Amatic+SC:700);
+
+body{
+    text-align: center;
+}
+h1{
+    font-family: 'Amatic SC', cursive;
+    font-weight: normal;
+    color: #8ac640;
+    font-size: 2.5em;
+}
+table{
+    margin: auto;
+}
+th{
+  font-size: 13px;
+  font-weight: normal;
+  background: #b9c9fe;
+  border-top: 4px solid #aabcfe;
+  border-bottom: 1px solid white;
+  color: #039;
+  padding: 8px;
+}
+td{
+  background: #e8edff;
+  border-bottom: 1px solid white;
+  color: #669;
+  border-top: 1px solid transparent;
+  padding: 8px;
+}
+tr:hover td {
+  background: #ccddff;
+}
+</style>
+ 
+</head>
+<body>
+ {% block body %}{% endblock %}
+
+</body>
+</html>

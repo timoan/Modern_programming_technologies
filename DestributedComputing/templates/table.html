@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+{% block body %}
+<div class="block1">
+<h1>Task information</h1>
+<h2>Is NUMBER prime?</h2>
+<p>NUMBER = 2^N - 1</p>
+<p>{{args}}</p>
+
+<table border=1>
+<TR>
+   <TD>Task number</TD>
+   <TD>N</TD>
+   <TD>Status</TD>
+   <TD>Time doing</TD>
+   <TD>Result</TD>
+</TR>
+{% for i in taskslist %}
+<TR>
+   <TD>{{i["taskID"]}}</TD>
+   <TD>{{i["inputdata"]}}</TD>
+   <TD>{{i["status"]}}</TD>
+   <TD>{{i["time"]}}</TD>
+   <TD>{{i["result"]}}</TD>
+</TR>
+{% endfor %}
+</table>
+ 
+</div>
+{% endblock %}
